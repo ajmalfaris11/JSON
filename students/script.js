@@ -11,5 +11,7 @@ function loadData(){
     .then(response => response.json()) //only taking json file from response
     .then(data => { // and that response store to data (json file) 
         console.log(data);
+
+        document.getElementById("newData").innerHTML = data.students[0].name;
     })
 }
