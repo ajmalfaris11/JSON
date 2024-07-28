@@ -1,0 +1,86 @@
+JSON -> Java Script Object Notation
+------------------------------------
+
+# JSON is light weight
+# Completely language independent
+# Easy to understand, manipulate and generate
+
+
+JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is widely used for transmitting data between a server and a web application as text. JSON is language-independent but uses conventions that are familiar to programmers of the C family of languages, including C, C++, Java, JavaScript, Perl, Python, and many others.
+
+### JSON Syntax
+
+JSON is built on two structures:
+1. **A collection of name/value pairs**: In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.
+2. **An ordered list of values**: In most languages, this is realized as an array, vector, list, or sequence.
+
+### Example of JSON
+
+```json
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "zipcode": "12345"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "555-555-5555"
+    },
+    {
+      "type": "work",
+      "number": "555-555-5556"
+    }
+  ]
+}
+```
+
+### JSON Data Types
+
+- **String**: Enclosed in double quotes, e.g., `"John Doe"`.
+- **Number**: No quotes, e.g., `30`.
+- **Object**: Enclosed in curly braces `{}`, containing a set of name/value pairs.
+- **Array**: Enclosed in square brackets `[]`, containing a list of values.
+- **Boolean**: `true` or `false`.
+- **null**: Represents an empty value.
+
+ Parsing and Generating JSON
+-----------------------------
+
+Most programming languages provide libraries or built-in functionality for parsing JSON strings 
+and generating JSON data.
+
+In JavaScript
+-------------
+
+- **Parsing JSON**: `JSON.parse()`
+- **Stringifying JSON**: `JSON.stringify()`
+
+```javascript
+// JSON string
+const jsonString = '{"name": "John Doe", "age": 30, "isStudent": false}';
+
+// Parse JSON string into JavaScript object
+const jsonObj = JSON.parse(jsonString);
+console.log(jsonObj.name); // Output: John Doe
+
+// Stringify JavaScript object into JSON string
+const jsonStringified = JSON.stringify(jsonObj);
+console.log(jsonStringified); // Output: {"name":"John Doe","age":30,"isStudent":false}
+```
+
+Uses of JSON
+------------
+
+1. Web APIs: JSON is commonly used to exchange data between a client and server.
+   ---------
+2. Configuration Files: JSON is often used for configuration files because of its readability and simplicity.
+   --------------------
+3. Data Storage: Lightweight and human-readable format for storing structured data.
+   --------------
+
+JSON has become the de facto standard for data interchange on the web due to its simplicity and ease of use.
