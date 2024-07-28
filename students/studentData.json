@@ -1,0 +1,40 @@
+{
+    "students": [
+      {
+        "name": "Alice Johnson",
+        "age": 20,
+        "place": "New York",
+        "is_student": true,
+        "languages": ["English", "Spanish"]
+      },
+      {
+        "name": "Bob Smith",
+        "age": 22,
+        "place": "Los Angeles",
+        "is_student": true,
+        "languages": ["Spanish", "French"]
+      },
+      {
+        "name": "Charlie Brown",
+        "age": 19,
+        "place": "Chicago",
+        "is_student": true,
+        "languages": ["French", "German"]
+      },
+      {
+        "name": "Diana Prince",
+        "age": 21,
+        "place": "Houston",
+        "is_student": true,
+        "languages": ["German", "Italian"]
+      },
+      {
+        "name": "Ethan Hunt",
+        "age": 23,
+        "place": "Miami",
+        "is_student": true,
+        "languages": ["Italian", "Portuguese"]
+      }
+    ]
+  }
+  
