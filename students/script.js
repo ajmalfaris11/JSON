@@ -1,3 +1,13 @@
+// searching studentes
+document.getElementById('searchButton').addEventListener('click',()=>{
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    alert(query);
+})
+
+
+
+
+
 
 // define loadData
 function loadData(){
